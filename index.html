@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<!-- Responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Тренировка Javascript</title>
+	<!-- Favicon & Theme Color -->
+	<meta name="theme-color" content="#2500f9">
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="header" id="header">
+		<div class="container">
+			<a href="#" class="logo"></a>
+			<h1 class="header__title">
+				Тренировка Javascript
+			</h1>
+		</div>
+	</header>
+	<section class="tab" id="tab">
+		<div class="container">
+			<h2 class="tab__title">
+				1. Табы
+			</h2>
+			<div class="tabs-block-wrapper">
+        		<div id="tabs">
+            		<button type="button" class="tab-btn active" data-btn="1">Жираф</button>
+            		<button type="button" class="tab-btn" data-btn="2">Олень</button>
+            		<button type="button" class="tab-btn" data-btn="3">Козочка</button>
+            		<button type="button" class="tab-btn" data-btn="4">Бурундук</button>
+        		</div>
+        		<div id="contents">
+            		<div class="content active" data-content="1">
+            			<h2 class="content__title">
+            				Жираф 
+            			</h2>
+            			<p class="content__text">
+            				Жираф (лат. Giraffa) — парнокопытное млекопитающее из семейства жирафовых. Является самым высоким наземным животным планеты.
+            			</p>
+						<p class="content__text">
+							Жирафы являются исключительно растительноядными животными. Строение тела и физиология позволяют им питаться листвой древесных крон — на высоте, где у них нет конкурентов. Из деревьев предпочитают акацию. Жираф охватывает ветвь длинным языком, тянет её ко рту и общипывает листья, оттягивая голову назад. Язык и губы устроены таким образом, что не повреждаются, несмотря на колючие сучья. Ежедневно жираф потребляет около 30 кг пищи и проводит за едой от 16 до 20 часов в сутки. 
+						</p>
+            		</div>
+            		<div class="content" data-content="2">
+            			<h2 class="content__title">
+            				Олень 
+            			</h2>
+            			<p class="content__text">
+            				Олень (Cervus) — рід ссавців родини оленевих (Cervidae), велика жуйна тварина (свійська та дика) із гілчастими рогами і коротким хвостом. Рід налічує чотири види, а поширення включає Євразію, Північну Африку й Північну Америку.
+            			</p>
+						<p class="content__text">
+							Олень благородний (східний) (Cervus elaphus) — один з наймінливіших видів ссавців. Під цим ім'ям прийнято об'єднувати багато підвидів і географічних рас, які раніше розцінювалися як самостійні види, що відрізняються один від одного розмірами, будовою рогів і деталями забарвлення. Проте, незважаючи на відмінності, всі ці олені, безумовно, належать до одного виду, який характеризується тим, що літнє хутро дорослих тварин не має плям.
+						</p>
+            		</div>
+            		<div class="content" data-content="3">
+            			<h2 class="content__title">
+            				Козочка 
+            			</h2>
+            			<p class="content__text">
+            				Домашняя коза (лат. Capra hircus) — домашнее животное, вид парнокопытных из рода горные козлы (Capra) семейства полорогих.
+            			</p>
+						<p class="content__text">
+							Коза — одно из первых прирученных животных. Одомашнена на Ближнем Востоке, приблизительно 9 тыс. лет назад. Предком домашней козы был дикий безоаровый козёл (Capra hircus aegagrus), до сегодняшнего дня встречающийся от греческих островов в Эгейском море через Малую Азию, Армянское нагорье и Переднюю Азию до Средней Азии.
+						</p>
+					</div>
+            		<div class="content" data-content="4">
+            			<h2 class="content__title">
+            				Бурундук 
+            			</h2>
+            			<p class="content__text">
+            				Бурундук (лат. Tamiini) — монофилетическая группа грызунов из семейства беличьих. Согласно классификации, принимаемой Красной книгой МСОП, существует три самостоятельных рода бурундуков: Neotamias, Eutamias и Tamias.
+            			</p>
+						<p class="content__text">
+							Бурундук, как и белка, — древесный житель. Ему не обязательно нужны высокие старые деревья, иногда он довольствуется зарослями черемухи, березняка или ивы. На открытых местах и в чистом высокоствольном лесу без подлеска из молодой поросли и кустарников он не живёт. Предпочитает места, заваленные буреломом и валежником по берегам речек и ручьёв.
+						</p>
+            		</div>
+        		</div>
+    		</div>
+		</div>
+	</section>
+	<section class="windows" id="windows">
+		<div class="container">
+			<h2 class="tab__title">
+				2. Модальное окно
+			</h2>	
+			<div class="flex-wrapper">
+        		<button type="button" id="btn-open">
+        			Вызвать дождь
+        		</button>
+   			</div>
+    		<div id="wrapper-modal">
+        		<div id="overlay"></div>
+        		<div id="modal-window">
+        			<h2 class="modal-window_title">
+            			Немного о дожде
+            		</h2>
+            		<div class="modal-window_wraper">
+            			<p class="modal-window_text">
+            				До́ждь — атмосферные осадки, выпадающие из облаков в виде капель жидкости со средним диаметром от 0,5 до 6—7 мм[1].
+	        			</p>
+						<p class="modal-window_text">
+							Осенние дожди. Южная Эстония
+						</p>
+						<p class="modal-window_text">
+							Летний дождь в Санкт-Петербурге <br>
+							Жидкие осадки с меньшим диаметром капель называются моросью[2]. Капли с диаметром больше 6—7 мм разбиваются в процессе падения из облаков на меньшие капли, поэтому даже при сильнейшем ливне диаметр капель не превышает 6—7 мм. Интенсивность дождя обычно составляет от 0,25 мм/ч (моросящий дождь) до 100 мм/ч (ливень)[1]. В Европе самый сильный ливень с интенсивностью 15,5 мм/мин был зафиксирован в 1920 году в Германии[2].	
+						</p>	
+            		</div>
+            	</div>
+        	</div>
+    	</div>
+	</section>
+	<section class="slider" id="slider">
+		<div class="container">
+			<h2 class="tab__title">
+				3. Слайдер
+			</h2>
+			<div class="flex-wrapper">
+        		<div class="slider-wrapper">
+            		<div class="slide active">
+                		Это слайд 1 с текстом
+            		</div>
+            		<div class="slide">
+               			Это слайд 2 с текстом 
+           			</div>
+            		<div class="slide">
+                		Это слайд 3 с текстом
+            		</div>
+            		<button type="button" id="btn-prev">
+            		</button>
+            		<button type="button" id="btn-next">
+            		</button>
+        		</div>
+    		</div>
+    		<div class="dots-wrapper">
+        		<span class="dot active"></span>
+        		<span class="dot"></span>
+        		<span class="dot"></span>
+    		</div>
+		</div>
+	</section>				
+	<footer class="footer" id="footer">
+		<div class="container">
+			<h2 class="tab__title footer__title">
+				Ну, что поделать, если мне все это удалось! :)
+			</h2>
+		</div>
+	</footer>		
+	<script src="js/main.js"></script>	
+</body>
+</html>
